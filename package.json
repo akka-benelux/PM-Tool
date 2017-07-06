@@ -25,7 +25,7 @@
     "bundle.mac": "npm run bundle.prepare && electron-packager dist/ demo --platform=darwin --arch=x64 --overwrite --out=bundles",
     "bundle.windows": "npm run bundle.prepare && electron-packager dist/ demo --platform=win32 --overwrite --out=bundles",
     "bundle.linux": "npm run bundle.prepare && electron-packager dist/ demo --platform=linux --overwrite --out=bundles",
-    "electron-packager": "electron-packager"
+    "electron-packager": "electron-packager . --asar=true"
   },
   "private": true,
   "dependencies": {
