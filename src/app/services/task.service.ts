@@ -4,10 +4,10 @@ import {Task} from "../models/task";
 @Injectable()
 export class TaskService {
   //this is the file that stores the projects
-  private prj_json = require('../../assets/projects/task.json');
+  private task_json = require('../../assets/projects/task.json');
   //get all projects in the json file
   get(): Promise<Task[]> {
-      return Promise.resolve(this.prj_json.project);
+      return Promise.resolve(this.task_json.task);
   }
     //
     // get() {
