@@ -1,5 +1,5 @@
 {
-  "name": "angular-electron-seed",
+  "name": "akka-pm",
   "version": "0.0.0",
   "license": "MIT",
   "main": "electron-app.js",
@@ -25,7 +25,7 @@
     "bundle.mac": "npm run bundle.prepare && electron-packager dist/ demo --platform=darwin --arch=x64 --overwrite --out=bundles",
     "bundle.windows": "npm run bundle.prepare && electron-packager dist/ demo --platform=win32 --overwrite --out=bundles",
     "bundle.linux": "npm run bundle.prepare && electron-packager dist/ demo --platform=linux --overwrite --out=bundles",
-    "electron-packager": "electron-packager . --asar=true"
+    "electron-packager": "electron-packager . --asar=true --icon=src/assets/icons/akka.ico"
   },
   "private": true,
   "dependencies": {
@@ -37,7 +37,9 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@types/dhtmlxgantt": "^4.0.33",
     "core-js": "^2.4.1",
+    "dhtmlx-gantt": "^4.1.0",
     "electron": "^1.6.8",
     "electron-connect": "^0.4.8",
     "electron-packager": "^8.7.1",

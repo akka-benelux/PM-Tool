@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'seed-getting-started',
   templateUrl: './getting-started.component.html',
-  styleUrls: ['./getting-started.component.scss']
+  styleUrls: ['./getting-started.component.css']
 })
 export class GettingStartedComponent {
 
