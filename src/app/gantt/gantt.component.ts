@@ -17,7 +17,7 @@ import {} from "@types/dhtmlxgantt";
         }
     `],
     providers: [TaskService, LinkService],
-    template: "<div #gantt_here style='width: 100%; height: 100%;'></div>",
+    templateUrl: "./gantt.component.html",
 })
 export class GanttComponent implements OnInit {
     @ViewChild("gantt_here") ganttContainer: ElementRef;
